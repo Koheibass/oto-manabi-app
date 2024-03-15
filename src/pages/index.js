@@ -14,7 +14,6 @@ export default function Home({ contents }) {
           </li>
         ))}
       </ul>
-      <p></p>
     </div>
   );
 }
