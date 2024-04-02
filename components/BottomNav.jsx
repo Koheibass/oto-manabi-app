@@ -8,7 +8,7 @@ import { FaBook } from "react-icons/fa";
 
 export default function BottomNav() {
     return (
-        <ul className="flex fixed items-center justify-center">
+        <ul className="flex items-center justify-center w-full">
             <li>
                 <a href=''><FaHouse /><span>ホーム</span></a>
             </li>

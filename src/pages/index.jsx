@@ -15,9 +15,9 @@ export default function Home() {
                 <Search />
                 <MainContents />
                 <Calender />
-            </main>
+            </main >
             <BottomNav />
-        </div>
+        </div >
 
     )
 }

@@ -18,7 +18,7 @@ export default function Calender() {
         }
     ];
     return (
-        <div>
+        <div className='my-4'>
             <FullCalendar
                 plugins={[dayGridPlugin]}
                 locale={jaLocale}

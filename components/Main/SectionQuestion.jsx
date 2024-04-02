@@ -1,5 +1,9 @@
 export default function SectionQuestion() {
     return (
-        <h1 className="col-span-1 row-span-1">質問Liveアーカイヴ</h1>
+        <div>
+            <span className="flex items-center justify-center border border-black border-dotted">
+                <img src="/photo/questionphoto.png" width="50%" />
+            </span>
+        </div>
     )
 }

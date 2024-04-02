@@ -1,6 +1,6 @@
 export default function TopImage() {
     return (
-        <div className='grid'>
+        <div className='flex'>
             <span>
                 <img src="/photo/mainimg.png" />
             </span>
