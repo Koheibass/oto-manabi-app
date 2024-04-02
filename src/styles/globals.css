@@ -16,7 +16,10 @@
   }
 }
 
-body {}
+body {
+  width: auto;
+}
+
 
 @layer utilities {
   .text-balance {
