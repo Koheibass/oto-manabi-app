@@ -1,10 +1,18 @@
 import BottomNav from "../../../components/BottomNav";
 
+
 export default function MentalContent() {
     return (
         <div className="flex flex-col items-center justify-center">
+            <nav>
+                <div>
+                    <span className="flex items-center justify-center">
+                        <img src="/photo/mentalphoto.png" width="50%" />
+                    </span>
+                </div>
+            </nav>
             <main>
-                <h1>メンタルアーカイヴ</h1>
+
             </main>
             <BottomNav />
         </div>
