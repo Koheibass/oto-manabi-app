@@ -14,7 +14,7 @@ export default function BottomNav() {
     const [value, setValue] = React.useState(0);
 
     return (
-        <Box sx={{ width: 500 }}>
+        <Box sx={{ width: 100 }}>
             <BottomNavigation
                 showLabels
                 value={value}
@@ -23,10 +23,10 @@ export default function BottomNav() {
                 }}
             >
                 <BottomNavigationAction LinkComponent={Link} href={"/"} label="ホーム" icon={<HomeIcon />} />
-                <BottomNavigationAction label="質問LIVE" icon={<LiveTvIcon />} />
-                <BottomNavigationAction label="メンタル" icon={<PsychologyIcon />} />
-                <BottomNavigationAction label="楽典" icon={<LibraryMusicIcon />} />
-                <BottomNavigationAction label="りなコラム" icon={<MusicNoteIcon />} />
+                <BottomNavigationAction LinkComponent={Link} href={"/Maincontents/questioncontent"} label="質問LIVE" icon={<LiveTvIcon />} />
+                <BottomNavigationAction LinkComponent={Link} href={"/Maincontents/mentalcontent"} label="メンタル" icon={<PsychologyIcon />} />
+                <BottomNavigationAction LinkComponent={Link} href={"/Maincontents/mgrammercontent"} label="楽典" icon={<LibraryMusicIcon />} />
+                <BottomNavigationAction LinkComponent={Link} href={"/Maincontents/columncontent"} label="りなコラム" icon={<MusicNoteIcon />} />
             </BottomNavigation>
         </Box >
     );
