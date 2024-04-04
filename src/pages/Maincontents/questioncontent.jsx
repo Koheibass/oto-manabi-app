@@ -14,7 +14,9 @@ export default function QuestionContent() {
             <main>
                 <Search />
             </main>
-            <BottomNav />
+            <div className="fixed bottom-0">
+                <BottomNav />
+            </div>
         </div>
     )
 }

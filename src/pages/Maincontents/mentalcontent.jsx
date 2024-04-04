@@ -14,7 +14,9 @@ export default function MentalContent() {
             <main>
 
             </main>
-            <BottomNav />
+            <div className="fixed bottom-0">
+                <BottomNav />
+            </div>
         </div>
     )
 }

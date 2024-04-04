@@ -15,7 +15,9 @@ export default function MgrammerContent() {
                 <Search />
                 <p>Comming Soon!</p>
             </main>
-            <BottomNav />
+            <div className="fixed bottom-0">
+                <BottomNav />
+            </div>
         </div>
     )
 }
