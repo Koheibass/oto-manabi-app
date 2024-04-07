@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { client } from "/libs/client";
 
-export default function Home({ contents }) {
+export default function test({ contents }) {
     return (
         <div>
             <ul>
