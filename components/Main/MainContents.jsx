@@ -3,10 +3,10 @@ import SectionMental from "./SectionMental";
 import SectionMgrammar from "./SectionMgrammar";
 import SectionQuestion from "./SectionQuestion";
 
-export default function MainContents() {
+export default function MainContents({ contents }) {
     return (
         <div className="grid grid-cols-2 grid-rows-2">
-            <SectionQuestion />
+            <SectionQuestion contents={contents} />
             <SectionMental />
             <SectionMgrammar />
             <SectionColumn />

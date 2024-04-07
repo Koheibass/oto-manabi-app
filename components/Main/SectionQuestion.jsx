@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { client } from "../../libs/client";
 
 export default function SectionQuestion({ contents }) {
     return (
@@ -19,17 +18,4 @@ export default function SectionQuestion({ contents }) {
             </ul>
         </div>
     );
-};
-
-export const getStaticProps = async () => {
-    const data = await client.get({
-        endpoint: "content", queries: { filters: 'type[contains]質問Liveアーカイヴ' }
-    })
-
-    return {
-        props: {
-            contents: data.contents,
-        },
-
-    };
 };
