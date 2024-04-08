@@ -1,11 +1,10 @@
 import * as React from 'react';
 import Search from '../../components/Search';
-import MainContents from '../../components/Main/MainContents';
 import Calender from '../../components/Calender';
 import BottomNav from '../../components/BottomNav';
-import { client } from '../../libs/client';
+import MainContents from '../../components/Main/MainContents';
 
-export default function Home({ contents }) {
+export default function Home() {
     return (
         <div className='flex flex-col items-center justify-center'>
             <nav>
@@ -22,7 +21,7 @@ export default function Home({ contents }) {
                     </span>
                 </div>
                 <Search />
-                <MainContents contents={contents} />
+                <MainContents />
                 <Calender />
             </main >
             <div className="fixed bottom-0">
@@ -31,17 +30,4 @@ export default function Home({ contents }) {
         </div >
 
     );
-};
-
-export const getStaticProps = async () => {
-    const data = await client.get({
-        endpoint: "content", queries: { filters: 'type[contains]質問Liveアーカイヴ' }
-    })
-
-    return {
-        props: {
-            contents: data.contents,
-        },
-
-    };
 };

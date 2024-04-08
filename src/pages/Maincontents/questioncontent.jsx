@@ -1,7 +1,9 @@
 import BottomNav from "../../../components/BottomNav";
 import Search from "../../../components/Search";
+import { client } from "../../../libs/client";
+import Link from "next/link";
 
-export default function QuestionContent() {
+export default function QuestionContent({ contents }) {
     return (
         <div className="flex flex-col items-center justify-center">
             <nav>
@@ -13,10 +15,34 @@ export default function QuestionContent() {
             </nav>
             <main>
                 <Search />
+                <ul>
+                    {contents.map((content) => (
+                        <li key={content.id}>
+                            <Link href={content.videoUrl}>
+                                <img className="w-40" src={content.thumbnail.url} alt={content.name} />
+                                {content.name}
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
             </main>
+
             <div className="fixed bottom-0">
                 <BottomNav />
             </div>
         </div>
     )
 }
+
+export const getStaticProps = async () => {
+    const data = await client.get({
+        endpoint: "content", queries: { filters: 'type[contains]質問Liveアーカイヴ' }
+    })
+
+    return {
+        props: {
+            contents: data.contents,
+        },
+
+    };
+};
