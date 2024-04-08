@@ -1,4 +1,3 @@
-import QuestionContent from "@/pages/Maincontents/questioncontent";
 import SectionColumn from "./SectionColumn";
 import SectionMental from "./SectionMental";
 import SectionMgrammar from "./SectionMgrammar";
