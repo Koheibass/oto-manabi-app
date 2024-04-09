@@ -3,7 +3,7 @@ import Search from "../../../components/Search";
 import { client } from "../../../libs/client";
 
 
-export default function ColumnDetails({ contents }) {
+export default function ColumnId({ content }) {
     return (
         <div className="flex flex-col items-center justify-center">
             <nav>
@@ -14,14 +14,10 @@ export default function ColumnDetails({ contents }) {
                 </div>
             </nav>
             <main>
-                <Search />
-                <ul className="">
-                    {contents.map((content) => (
-                        <li className="flex my-4" key={content.id}>
-                            <p>{content.article}</p>
-                        </li>
-                    ))}
-                </ul>
+                <h1>{content.name}</h1>
+                <div>
+                    {content.article}
+                </div>
             </main>
             <div className="fixed bottom-0">
                 <BottomNav />
@@ -30,15 +26,21 @@ export default function ColumnDetails({ contents }) {
     );
 };
 
-export const getStaticProps = async () => {
-    const data = await client.get({
-        endpoint: "content", queries: { filters: 'type[contains]りなコラム' }
-    })
+export const getStaticPaths = async () => {
+    const data = await client.get({ endpoint: "content" });
+
+    const paths = data.contents.map((content) => `/content/${content.id}`);
+    return { paths, fallback: false };
+};
+
+
+export const getStaticProps = async (context) => {
+    const id = context.params.id;
+    const data = await client.get({ endpoint: "content", contentId: id, queries: { filters: 'type[contains]りなコラム' } });
 
     return {
         props: {
-            contents: data.contents,
+            content: data,
         },
-
     };
 };
