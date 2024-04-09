@@ -15,7 +15,7 @@ export default function Home() {
                 </div>
             </nav>
             <main>
-                <div className='flex'>
+                <div className='flex px-2'>
                     <span>
                         <img src="/photo/mainimg.png" />
                     </span>
