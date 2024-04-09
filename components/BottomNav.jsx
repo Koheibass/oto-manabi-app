@@ -1,33 +1,40 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import BottomNavigation from '@mui/material/BottomNavigation';
-import BottomNavigationAction from '@mui/material/BottomNavigationAction';
-import HomeIcon from '@mui/icons-material/Home';
-import LiveTvIcon from '@mui/icons-material/LiveTv';
-import PsychologyIcon from '@mui/icons-material/Psychology';
-import LibraryMusicIcon from '@mui/icons-material/LibraryMusic';
-import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import Link from 'next/link';
+import { IoMdHome } from "react-icons/io";
+import { IconContext } from 'react-icons';
+import { TbMusicQuestion } from "react-icons/tb";
+import { RiMentalHealthLine } from "react-icons/ri";
+import { MdLibraryMusic } from "react-icons/md";
+import { MdOutlineMenuBook } from "react-icons/md";
+
+
 
 
 export default function BottomNav() {
-    const [value, setValue] = React.useState(0);
 
     return (
-        <Box sx={{ width: 100 }}>
-            <BottomNavigation
-                showLabels
-                value={value}
-                onChange={(event, newValue) => {
-                    setValue(newValue);
-                }}
-            >
-                <BottomNavigationAction LinkComponent={Link} href={"/"} label="ホーム" icon={<HomeIcon />} />
-                <BottomNavigationAction LinkComponent={Link} href={"/Maincontents/questioncontent"} label="質問LIVE" icon={<LiveTvIcon />} />
-                <BottomNavigationAction LinkComponent={Link} href={"/Maincontents/mentalcontent"} label="メンタル" icon={<PsychologyIcon />} />
-                <BottomNavigationAction LinkComponent={Link} href={"/Maincontents/mgrammercontent"} label="楽典" icon={<LibraryMusicIcon />} />
-                <BottomNavigationAction LinkComponent={Link} href={"/Maincontents/columncontent"} label="りなコラム" icon={<MusicNoteIcon />} />
-            </BottomNavigation>
-        </Box >
+        <IconContext.Provider value={{ color: 'black', size: '40px' }}>
+            <ul className='flex bg-[#ffe6fd] fixed bottom-0 left-0 right-0'>
+                <li className='px-8'>
+                    <Link href='/'><IoMdHome /></Link>
+                    <span>ホーム</span>
+                </li>
+                <li className='pr-6'>
+                    <Link href='/Maincontents/questioncontent'><TbMusicQuestion /></Link>
+                    <span>質問Live</span>
+                </li>
+                <li className='pr-6'>
+                    <Link href='/Maincontents/mentalcontent'><RiMentalHealthLine /></Link>
+                    <span>メンタル</span>
+                </li>
+                <li className='pr-6'>
+                    <Link href='/Maincontents/mgrammercontent'><MdLibraryMusic /></Link>
+                    <span>楽典</span>
+                </li>
+                <li className='pl-2'>
+                    <Link href='/Maincontents/columncontent'><MdOutlineMenuBook /></Link>
+                    <span>Rinaコラム</span>
+                </li>
+            </ul>
+        </IconContext.Provider>
     );
 }

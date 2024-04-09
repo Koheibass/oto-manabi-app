@@ -24,7 +24,7 @@ export default function Home() {
                 <MainContents />
                 <Calender />
             </main >
-            <div className="fixed bottom-0">
+            <div>
                 <BottomNav />
             </div>
         </div >
