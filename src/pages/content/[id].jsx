@@ -8,7 +8,7 @@ export default function ColumnId({ content }) {
             <nav>
                 <div>
                     <span className="flex items-center justify-center">
-                        <img src="/photo/columnPhoto.png" width="50%" />
+                        <img src="/photo/columnPhoto1.png" width="50%" />
                     </span>
                 </div>
             </nav>

@@ -15,7 +15,7 @@ export default function QuestionContent({ contents }) {
             </nav>
             <main>
                 <Search />
-                <ul className="overflow:scroll">
+                <ul className="py-4 pb-14">
                     {contents.map((content) => (
                         <li className="flex my-4" key={content.id}>
                             <Link href={content.videoUrl}>
