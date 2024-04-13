@@ -8,7 +8,7 @@ export default function MentalContent({ contents }) {
             <nav>
                 <div>
                     <span className="flex items-center justify-center">
-                        <img src="/photo/mentalphoto.png" width="50%" />
+                        <img src="/photo/mentalphoto1.png" width="50%" />
                     </span>
                 </div>
             </nav>

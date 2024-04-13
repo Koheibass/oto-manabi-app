@@ -7,7 +7,7 @@ export default function MgrammerContent() {
             <nav>
                 <div>
                     <span className="flex items-center justify-center">
-                        <img src="/photo/Mgrammerphoto.png" width="50%" />
+                        <img src="/photo/Mgrammerphoto1.png" width="50%" />
                     </span>
                 </div>
             </nav>
