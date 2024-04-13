@@ -9,7 +9,7 @@ export default function QuestionContent({ contents }) {
             <nav>
                 <div>
                     <span className="flex items-center justify-center">
-                        <img src="/photo/questionphoto.png" width="50%" />
+                        <img src="/photo/questionphoto1.png" width="50%" />
                     </span>
                 </div>
             </nav>

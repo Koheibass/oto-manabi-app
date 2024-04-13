@@ -1,5 +1,4 @@
 import BottomNav from "../../../components/BottomNav";
-import Search from "../../../components/Search";
 import { client } from "../../../libs/client";
 
 
@@ -19,7 +18,7 @@ export default function ColumnId({ content }) {
                     {content.article}
                 </div>
             </main>
-            <div className="fixed bottom-0">
+            <div>
                 <BottomNav />
             </div>
         </div>

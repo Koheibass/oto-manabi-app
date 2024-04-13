@@ -3,6 +3,7 @@ import Search from '../../components/Search';
 import Calender from '../../components/Calender';
 import BottomNav from '../../components/BottomNav';
 import MainContents from '../../components/Main/MainContents';
+import { Event } from '../../components/Event';
 
 export default function Home() {
     return (
@@ -15,14 +16,14 @@ export default function Home() {
                 </div>
             </nav>
             <main>
-                <div className='flex px-2'>
+                <div className='flex pt-4'>
                     <span>
-                        <img src="/photo/mainimg.png" />
+                        <img src="/photo/mainimg2.png" />
                     </span>
                 </div>
                 <Search />
                 <MainContents />
-                <Calender />
+                <Event />
             </main >
             <div>
                 <BottomNav />
