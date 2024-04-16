@@ -12,10 +12,9 @@ export default function ColumnId({ content }) {
                     </span>
                 </div>
             </nav>
-            <main>
-                <h1>{content.name}</h1>
-                <div>
-                    {content.article}
+            <main className="pb-16">
+                <h1 className="items-center text-center text-xl pb-10">{content.name}</h1>
+                <div className="px-4 leading-8" dangerouslySetInnerHTML={{ __html: content.article }}>
                 </div>
             </main>
             <div>

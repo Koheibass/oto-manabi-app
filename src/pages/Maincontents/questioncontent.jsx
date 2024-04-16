@@ -15,19 +15,19 @@ export default function QuestionContent({ contents }) {
             </nav>
             <main>
                 <Search />
-                <ul className="py-4 pb-14">
+                <ul className="py-4 px-2 pb-14">
                     {contents.map((content) => (
-                        <li className="flex my-4" key={content.id}>
+                        <li className="flex my-4 divide-y-2" key={content.id}>
                             <Link href={content.videoUrl}>
-                                <img className="w-40" src={content.thumbnail.url} alt={content.name} />
+                                <img className="w-[180px]" src={content.thumbnail.url} alt={content.name} />
                             </Link>
-                            <Link href={content.videoUrl}>{content.name}</Link>
+                            <Link className="pl-2" href={content.videoUrl}>{content.name}</Link>
                         </li>
                     ))}
                 </ul>
             </main>
 
-            <div className="fixed bottom-0">
+            <div>
                 <BottomNav />
             </div>
         </div>

@@ -13,7 +13,7 @@ export default function MgrammerContent() {
             </nav>
             <main>
                 <Search />
-                <p>Comming Soon!</p>
+                <p className="text-center">Comming Soon!</p>
             </main>
             <div className="fixed bottom-0">
                 <BottomNav />

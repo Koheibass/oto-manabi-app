@@ -13,15 +13,15 @@ export default function MentalContent({ contents }) {
                 </div>
             </nav>
             <main>
-                <ul className="">
+                <ul className="py-4 pb-14 px-2 ">
                     {contents.map((content) => (
-                        <li className="flex my-4 items-center" key={content.id}>
+                        <li className="flex my-4 divide-y-2" key={content.id}>
                             <Link href={content.videoUrl}>
-                                <img className="w-40" src={content.thumbnail.url} alt={content.name} />
+                                <img className="w-[130px]" src={content.thumbnail.url} alt={content.name} />
                             </Link>
                             <span>
-                                <Link href={content.videoUrl}>{content.name}</Link>
-                                <p>{content.article}</p>
+                                <Link className="px-2" href={content.videoUrl}>{content.name}</Link>
+                                <div className="pt-2 px-2 text-[12px]" dangerouslySetInnerHTML={{ __html: content.article }}></div>
                             </span>
                         </li>
                     ))}

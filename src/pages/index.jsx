@@ -1,6 +1,5 @@
 import * as React from 'react';
 import Search from '../../components/Search';
-import Calender from '../../components/Calender';
 import BottomNav from '../../components/BottomNav';
 import MainContents from '../../components/Main/MainContents';
 import { Event } from '../../components/Event';

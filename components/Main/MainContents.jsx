@@ -5,7 +5,7 @@ import SectionQuestion from "./SectionQuestion";
 
 export default function MainContents() {
     return (
-        <div className="grid grid-cols-2 grid-rows-2 px-2">
+        <div className="grid grid-cols-2 grid-rows-2">
             <SectionQuestion />
             <SectionMental />
             <SectionMgrammar />

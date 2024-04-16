@@ -15,7 +15,7 @@ export default function ColumnContent({ contents }) {
             </nav>
             <main>
                 <Search />
-                <ul className="">
+                <ul className="pb-14">
                     {contents.map((content) => (
                         <li className="flex my-4" key={content.id}>
                             <Link href={`/content/${content.id}`}>{content.name}</Link>
