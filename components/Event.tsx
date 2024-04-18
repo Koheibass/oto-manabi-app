@@ -3,7 +3,6 @@ import Link from 'next/link'
 export const Event = () => {
     return (
         <div>
-            { }
             <h3 className="text-center text-[16px] lg:tracking-widest lg:text-[18px] leading-none font-bold pt-4 pb-1 text-[#937a43] font-noto my-4">
                 <div>イベント情報</div>
             </h3>
