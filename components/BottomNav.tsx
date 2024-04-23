@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { IoMdHome } from "react-icons/io";
-import { IconContext } from 'react-icons';
 import { TbMusicQuestion } from "react-icons/tb";
 import { RiMentalHealthLine } from "react-icons/ri";
 import { MdLibraryMusic } from "react-icons/md";
