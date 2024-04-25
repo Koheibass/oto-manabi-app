@@ -30,9 +30,4 @@
   "exclude": [
     "node_modules"
   ],
-  "paths": {
-    "@/*": [
-      "./src/*"
-    ]
-  }
 }
