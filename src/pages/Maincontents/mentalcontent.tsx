@@ -1,4 +1,4 @@
-import BottomNav from "../../../components/BottomNav";
+import BottomNav from "../components/BottomNav";
 import { client } from "../../../libs/client";
 import Link from "next/link";
 

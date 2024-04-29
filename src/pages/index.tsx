@@ -1,8 +1,8 @@
 import * as React from 'react';
-import Search from '../../components/Search';
-import BottomNav from '../../components/BottomNav';
-import MainContents from '../../components/Main/MainContents';
-import Event from '../../components/Event';
+import Search from './components/Search';
+import BottomNav from './components/BottomNav';
+import MainContents from './components/Main/MainContents';
+import Event from './components/Event';
 
 export default function Home() {
     return (
