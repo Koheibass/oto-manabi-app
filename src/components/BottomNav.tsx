@@ -13,19 +13,19 @@ export default function BottomNav() {
                 <span className='text-xs'>ホーム</span>
             </li>
             <li className='pl-8'>
-                <Link href='/Maincontents/questioncontent'><TbMusicQuestion className='text-[30px]' /></Link>
+                <Link href='/question'><TbMusicQuestion className='text-[30px]' /></Link>
                 <span className='text-[10px]'>質問Live</span>
             </li>
             <li className='pl-8'>
-                <Link href='/Maincontents/mentalcontent'><RiMentalHealthLine className='text-[30px]' /></Link>
+                <Link href='/mental'><RiMentalHealthLine className='text-[30px]' /></Link>
                 <span className='text-[10px]'>メンタル</span>
             </li>
             <li className='pl-8'>
-                <Link href='/Maincontents/mgrammercontent'><MdLibraryMusic className='text-[30px]' /></Link>
+                <Link href='/mgrammer'><MdLibraryMusic className='text-[30px]' /></Link>
                 <span className='text-[10px]'>楽典</span>
             </li>
             <li className='pl-8'>
-                <Link href='/Maincontents/columncontent'><MdOutlineMenuBook className='text-[30px]' /></Link>
+                <Link href='/column'><MdOutlineMenuBook className='text-[30px]' /></Link>
                 <span className='text-[10px]'>Rinaコラム</span>
             </li>
         </ul>
