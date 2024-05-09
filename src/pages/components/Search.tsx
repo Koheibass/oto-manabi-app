@@ -1,3 +1,4 @@
+
 export default function Search() {
     return (
         <div className="flex justify-center items-center my-8">

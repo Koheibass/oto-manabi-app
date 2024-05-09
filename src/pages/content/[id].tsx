@@ -1,5 +1,5 @@
 import BottomNav from "../components/BottomNav";
-import { client } from "../../../libs/client";
+import { client } from "@/libs/client";
 
 
 export default function ColumnId({ content }) {
