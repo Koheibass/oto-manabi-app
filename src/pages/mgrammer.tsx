@@ -1,5 +1,5 @@
-import BottomNav from "../components/BottomNav";
-import Search from "../components/Search";
+import BottomNav from "@/components/BottomNav";
+import Search from "@/components/Search";
 
 export default function MgrammerContent() {
     return (

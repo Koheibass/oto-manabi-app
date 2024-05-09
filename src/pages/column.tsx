@@ -1,5 +1,5 @@
-import BottomNav from "../components/BottomNav";
-import Search from "../components/Search";
+import BottomNav from "@/components/BottomNav";
+import Search from "@/components/Search";
 import { client } from "@/libs/client";
 import Link from "next/link";
 
