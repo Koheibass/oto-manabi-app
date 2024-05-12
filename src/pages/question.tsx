@@ -19,9 +19,9 @@ export default function QuestionContent({ contents }) {
                     {contents.map((content) => (
                         <li className="flex my-4 divide-y-2" key={content.id}>
                             <Link href={content.videoUrl}>
-                                <img className="w-[180px]" src={content.thumbnail.url} alt={content.name} />
+                                <img className="w-[180px]" src={content.thumbnail.url} alt={content.question} />
                             </Link>
-                            <Link className="pl-2" href={content.videoUrl}>{content.name}</Link>
+                            <Link className="pl-2" href={content.videoUrl}>{content.question}</Link>
                         </li>
                     ))}
                 </ul>
