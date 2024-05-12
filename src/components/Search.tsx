@@ -1,5 +1,6 @@
 import { client } from '@/libs/client'
 import { useState } from 'react'
+import Link from "next/link";
 
 export default function Search() {
     const [list, setList] = useState([])
@@ -25,8 +26,10 @@ export default function Search() {
 
             <div>
                 <ul>
-                    {list.map((item: any) => (
-                        <li key={item.key}>{item.name}</li>)
+                    {list.map((content: any) => (
+                        <li className="flex my-4" key={content.id}>
+                            <Link href={`/content/${content.id}`}>{content.name}</Link>
+                        </li>)
                     )}
                 </ul>
             </div>
