@@ -29,14 +29,25 @@ export default function Search() {
                     {list.map((content: any) => (
                         <li className="flex my-4" key={content.id}>
                             <Link href={`/content/${content.id}`}>{content.column}</Link>
-                        </li>)
-                    )}
+                        </li>
+                    ))}
                     {list.map((content: any) => (
                         <li className="flex my-4 divide-y-2" key={content.id}>
                             <Link href={content.videoUrl}>
                                 <img className="w-[180px]" src={content.thumbnail.url} alt={content.question} />
                             </Link>
                             <Link className="pl-2" href={content.videoUrl}>{content.question}</Link>
+                        </li>
+                    ))}
+                    {list.map((content: any) => (
+                        <li className="flex my-4 divide-y-2" key={content.id}>
+                            <Link href={content.videoUrl}>
+                                <img className="w-[130px]" src={content.thumbnail.url} alt={content.mental} />
+                            </Link>
+                            <span>
+                                <Link className="px-2" href={content.videoUrl}>{content.mental}</Link>
+                                <div className="pt-2 px-2 text-[12px]" dangerouslySetInnerHTML={{ __html: content.article }}></div>
+                            </span>
                         </li>
                     ))}
                 </ul>
