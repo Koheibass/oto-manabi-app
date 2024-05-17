@@ -33,20 +33,19 @@ export default function Search() {
                     ))}
                     {list.map((content: any) => (
                         <li className="flex my-4 divide-y-2" key={content.id}>
-                            <Link href={content.videoUrl}>
-                                <img className="w-[180px]" src={content.thumbnail.url} alt={content.question} />
+                            <Link href={`${content.videoUrl}`}>
+                                <img className="w-[180px]" src={content.thumbnail?.url} alt={content.question} />
                             </Link>
-                            <Link className="pl-2" href={content.videoUrl}>{content.question}</Link>
+                            <Link className="pl-2" href={`/content/${content.videoUrl}`}>{content.question}</Link>
                         </li>
                     ))}
                     {list.map((content: any) => (
                         <li className="flex my-4 divide-y-2" key={content.id}>
-                            <Link href={content.videoUrl}>
-                                <img className="w-[130px]" src={content.thumbnail.url} alt={content.mental} />
+                            <Link href={`${content.videoUrl}`}>
+                                <img className="w-[130px]" src={content.thumbnailmental?.url} alt={content.mental} />
                             </Link>
                             <span>
-                                <Link className="px-2" href={content.videoUrl}>{content.mental}</Link>
-                                <div className="pt-2 px-2 text-[12px]" dangerouslySetInnerHTML={{ __html: content.article }}></div>
+                                <Link className="px-2" href={`${content.videoUrl}`}>{content.mental}</Link>
                             </span>
                         </li>
                     ))}
