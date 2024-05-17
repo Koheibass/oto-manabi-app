@@ -17,7 +17,7 @@ export default function MentalContent({ contents }) {
                     {contents.map((content) => (
                         <li className="flex my-4 divide-y-2" key={content.id}>
                             <Link href={content.videoUrl}>
-                                <img className="w-[130px]" src={content.thumbnail.url} alt={content.mental} />
+                                <img className="w-[130px]" src={content.thumbnailmental.url} alt={content.mental} />
                             </Link>
                             <span>
                                 <Link className="px-2" href={content.videoUrl}>{content.mental}</Link>
